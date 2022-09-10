@@ -1,0 +1,3 @@
+HTML: Focada em conteúdo (imagens, textos, vídeos, etc...)
+CSS: Focada em design das páginas (cores, sombras, tamanhos, posições, etc...)
+JavaScript: Focada em interações (menus, animações, popups, validações)

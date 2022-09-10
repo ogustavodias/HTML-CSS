@@ -1,0 +1,40 @@
+body {
+    background-color: rgb(91, 91, 91);
+    margin: 0;
+}
+
+header {
+    background-color: white;
+    text-align: center;
+    margin: 5px;
+}
+
+header > nav > a {
+    text-decoration: none;
+    margin-right: 100px;
+    color: white;
+}
+
+header > nav {
+    background-color: gray;
+}
+
+header > nav > a:hover {
+    text-decoration: underline;
+    color: rgb(222, 222, 222);
+}
+
+footer {
+    color: white;
+    background-color: black;
+    padding: 10px;
+}
+
+main {
+    background-color: white;
+    margin: 5px;
+}
+
+#noticias {
+    background-color: rgb(216, 216, 216);
+}

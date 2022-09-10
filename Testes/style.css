@@ -1,0 +1,9 @@
+div>div {
+    background-color: aliceblue;
+    color: blue;
+    height: 100px;
+    width: 200px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+}

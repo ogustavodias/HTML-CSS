@@ -1,0 +1,72 @@
+Repositório público:
+- github.com/gustavoguanabara
+- gustavoguanabara.github.io
+
+Ferramentas:
+- GIMP para editar imagens;
+- Color Adobe para criar paletas;
+- Coolors.co IDEM acima
+
+----------------------------------------------------------------------------ATALHOS:
+para HREF = CRTL + SPACE
+CRTL + SHIFT + P = colocar o trecho selecionado em uma tag
+SHIFT + TAB = reduzir o espaçamento de uma linha de código em relação ao inicio da linha
+ALT = Segurar para clicar e selecionar várias linhas ao mesmo tempo
+
+----------------------------------------------------------------------------TAGS HTML 
+
+<h1> = Cabeçalho 
+<hr> = linha horizontal
+<p> = paragrafo
+<ol> = lista ordenada
+<ul> = lista não ordenada
+<li> = item da lista ordenada e/ou não ordenada
+<dl> = lista de definição
+<dt> = Termo da lista de definição
+<dd> = Descrição do termo da lista de definição
+<picture> = marcação reservada para imagens no seu interior
+<audio> = tag para adicionar áudio ao site
+<video> = tag para adicionar vídeo ao site
+<source> = é utilizado para especificar múltiplos recursos de mídia de elementos <picture>, <audio> ou <video> em HTML5
+<a> = Âncora que irá direcionar para outro site
+<strong> = negrito (semântica)
+<em> = itálico (semântica)
+<mark> = marcação de texto (semântica)
+<del> = indicar texto excluído (semântica)
+<ins> = indicar texto inserido (semântica)
+<sup> = escrever um texto com letras menores e com o alinhamento acima das que do resto do conteúdo (semântica)
+<sub> = escrever um texto com letras menores e com o alinhamento abaixo das que do resto do conteúdo (semântica)
+<code> = transforma numa fonte boa para ler código
+<pre> = representar texto pré-formatado.
+<q> = aspas para citações simples.
+<blockquote> = citação completa (que tem quebra de linha).
+<abbr> = para dar significado as abreviações.
+<bdo> = direção do texto (possível inverter a ordem)
+href = "../link" para voltar para a pasta anterior
+font-size = usar sempre em px ou em, lembrando que 1em = 16px
+
+----------------------------------------------------------------------------SELETORES PERSONALIZADOS CSS
+
+# = id
+. = class
+: = pseudo-class
+:: = pseudo-element
+> = children
+
+um id deve ser usado em apenas uma tag, enquanto uma classe pode ser usado para englobar várias tags. 
+
+:root {
+--var1:
+} = variáveis em CSS
+
+
+----------------------------------------------------------------------------
+&lt; = <
+&gt; = >
+<!----> = comentário em HTML
+&reg = simbolo de marca registrada;
+&copy = simbolo de copyright;
+
+----------------------------------------------------------------------------
+* {} = definir configurações globais no CSS
+@charset "UTF-8"; = definir a compatibilidade do CSS com acentuações. Deve ser inserido no inicio do código CSS

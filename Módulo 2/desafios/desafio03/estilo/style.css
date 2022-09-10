@@ -1,0 +1,66 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+:root {
+    --font-destaque: "Passion One";
+    --font-padrao: "Sriracha";
+}
+
+header {
+    padding: 50px;
+    text-align: center;
+    background-color: black;
+    color: white;
+    font-family: var(--font-destaque);
+}
+
+header>h1 {
+    font-size: 10vw;
+}
+
+main {
+    font-family: var(--font-padrao);
+    font-size: 3vw;
+}
+
+section {
+    display: block;
+    padding: 100px 0px 100px 5px;
+}
+
+section>h3 {
+    width: 700px;
+    padding: 10px;
+}
+
+#second {
+    background-image: url(/imagens/background001.jpg);
+    background-position: right center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: white;
+}
+
+#second>h3 {
+    background-color: rgba(0, 0, 0, 0.333);
+}
+
+#five {
+    background-image: url(/imagens/background002.jpg);
+    background-position: right center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: white;
+}
+
+#five>h3 {
+    background-color: rgba(0, 0, 0, 0.382);
+}

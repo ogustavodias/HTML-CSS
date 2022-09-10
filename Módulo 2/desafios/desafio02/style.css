@@ -1,0 +1,76 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+@font-face {
+    font-family: 'astro';
+    src: url(fontes/astro.ttf);
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+:root {
+    --cor1: #020818;
+    --cor2: #5397C6;
+    --cor3: #031021;
+    --font-destaque: 'astro';
+    --font-padrao: 'Bebas Neue';
+}
+
+body {
+    background-image: url(imagens/espaco.jpg);
+    background-size: 100% 100%;
+    background-attachment: fixed;
+    color: white;
+}
+
+header {
+    color: white;
+    text-align: center;
+    font-family: 'astro', 'Bebas Neue';
+    text-shadow: 10px 10px 10px black;
+    padding: 50px;
+}
+
+header h1 {
+    font-weight: 100;
+}
+
+main {
+    font-family: 'Bebas Neue', sans-serif;
+}
+
+main article {
+    background-color: #02081878;
+    border-radius: 10px;
+    padding: 10px;
+    width: 200px;
+    display: inline-block;
+    margin-top: 30px;
+    margin-left: 110px;
+}
+
+#astronauta {
+    display: block;
+    margin: auto;
+    max-width: 500px;
+    width: 70%;
+}
+
+#video_music {
+    border-radius: 10px;
+    padding: 10px;
+    margin: auto;
+    width: 70%;
+    background-color: #02081878;
+    text-align: center;
+}
+
+#video_music>video {
+    border-radius: 10px;
+    max-width: 800px;
+    width: 70%;
+}
+
