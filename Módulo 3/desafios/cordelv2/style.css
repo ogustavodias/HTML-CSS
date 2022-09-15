@@ -42,7 +42,11 @@ header>h1 {
 section {
     font-family: var(--font-03);
     font-size: 4vw;
-    padding: 50px 0px 50px 50px;
+    padding: 50px 0px 0px 50px;
+}
+
+section>p {
+    margin-bottom: 60px;
 }
 
 section.normal {
