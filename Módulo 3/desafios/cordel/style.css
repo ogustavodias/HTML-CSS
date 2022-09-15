@@ -25,6 +25,7 @@ header h1 {
     padding-top: 50px;
     font-family: var(--fonte-destaque), sans-serif;
     font-size: 9vw;
+    font-variant: small-caps;
 }
 
 header p {
