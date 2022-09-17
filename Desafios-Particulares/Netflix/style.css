@@ -1,0 +1,44 @@
+@charset "UTF-8";
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+div.logo {
+    padding:20px 0px 0px 50px;
+    margin-right: 70%;
+}
+
+div.logo >img {
+    width: 166.5px;
+    height: 45px;
+}
+
+header > div {
+    display: inline-block;
+    color: white;
+}
+
+header {
+    justify-content: space-between;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    background-color: #E72D35;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+div#camada {
+    background-image: linear-gradient(black);
+}
+
+section#inicio {
+    background-image: url(imagens/BR-pt-20220912-popsignuptwoweeks-perspective_alpha_website_large.jpg);
+    background-size: cover;
+    height: 100vh;
+}
+
+
