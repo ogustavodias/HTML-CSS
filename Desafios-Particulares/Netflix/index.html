@@ -11,27 +11,54 @@
 </head>
 
 <body>
-    <main>
-        <div id="camada">
-            <section id="inicio">
-                <header>
-                    <div class="logo">
-                        <img src="imagens/Netflix_2015_logo.svg.png" alt="Netflix Logo">
+    <div id="container">
+        <header>
+            <div id="logo"><img src="imagens/Netflix_2015_logo.svg.png" alt="Netflix logo"></div>
+        </header>
+        <main>
+            <div id="login_box">
+                <form>
+                    <div class="login_box_main">
+                        <h1>Entrar</h1>
+                        <input id="input_user" required type="text" name="user"
+                            placeholder=" Email ou número de telefone">
+                        <input required type="password" name="password" placeholder=" Senha" id="input_password">
+                        <button id="bt_entrar">Entrar</button>
+                        <div class="remember">
+                            <div>
+                                <input type="checkbox" name="remember" id="remember_check">
+                                <label for="remember">Lembre-se de mim</label>
+                            </div>
+                            <a href="#">Precisa de ajuda?</a>
+                        </div>
                     </div>
-                    <div class="options">
-                        <a id="criar" href="#">Criar conta</a>
-                        <a id="Entrar" href="#">Entrar</a>
+                    <div class="login_box_footer">
+                        <div class="newhere">
+                            <h4>Novo por aqui? <a href="#">Assine agora</a>.</h4>
+                        </div>
+                        <div id="caption">
+                            <p>Esta página é protegida pelo Google reCAPTCHA para garantir que você não é um robô. <a
+                                    href="#">Saiba mais</a>.</p>
+                        </div>
                     </div>
-                </header>
-                <div class="centro">
-                    <h1>Filmes, séries e muito mais. Sem limites.</h1>
-                    <h2>Assista onde quiser. Cancele quando quiser.</h2>
-                    <p>Pronto para assistir? Informe seu email para criar ou reiniciar sua assinatura.</p>
-                    <input type="email" name="email" id="input_email" placeholder="Email"> <a href="#">Vamos lá ></a>
-                </div>
-            </section>
-        </div>
-    </main>
+                </form>
+            </div>
+        </main>
+        <footer>
+            <div id="footer_options">
+                <h4>Dúvidas? Ligue <a href="tel:0800 591 8942">0800 591 8942</a></h4>
+
+                <nav>
+                    <a href="#">Perguntas frequentes</a>
+                    <a href="#">Central de Ajuda</a>
+                    <a href="#">Termos de Uso</a>
+                    <a href="#">Privacidade</a>
+                    <a href="#">Preferências de cookies</a>
+                    <a href="#">Informações corporativas</a>
+                </nav>
+            </div>
+        </footer>
+    </div>
 </body>
 
 </html>
