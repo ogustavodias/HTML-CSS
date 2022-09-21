@@ -27,6 +27,7 @@ a:hover {
 
 div#container {
     background-color: rgba(0, 0, 0, 0.414);
+    box-shadow: inset 10px 10px 10px rgba(0, 0, 0, 0.397);
 }
 
 main {
