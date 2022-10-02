@@ -63,6 +63,7 @@ section#sc1 {
 
 section#sc1.mask {
     background-color: rgba(0, 0, 0, 0.500);
+    box-shadow: inset 0px 20px 20px 20px rgba(0, 0, 0, 0.5);
 }
 
 section#sc1 header {
