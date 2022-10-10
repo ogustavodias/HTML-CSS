@@ -1,0 +1,125 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'GhotamM';
+    src: url('../fontes/Gotham-Font/GothamMedium.ttf') format('truetype');
+    font-weight: normal;
+    font-size: 1em;
+}
+
+@font-face {
+    font-family: 'GhotamL';
+    src: url('../fontes/Gotham-Font/GothamLight.ttf') format('truetype');
+    font-weight: lighter;
+    font-size: 1em;
+}
+
+@font-face {
+    font-family: 'GhotamB';
+    src: url('../fontes/Gotham-Font/GothamBold.ttf') format('truetype');
+    font-weight: bold;
+    font-size: 1em;
+}
+
+/* ESTILOS GLOBAIS */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+    font-family: 'GhotamM', sans-serif;
+    background-image: linear-gradient(#07080A, #14181B, #262A2D);
+    color: white;
+}
+
+main {
+    height: 100vh;
+}
+
+.mask {
+    background-image: url(../imagens/background.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* ESTILOS ESPECIFICOS */
+
+header {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 15px 0px 15px;
+}
+
+div#logo img {
+    width: 120px;
+    height: 85px;
+}
+
+header a {
+    text-decoration: none;
+    font-size: 0.9em;
+}
+
+header>nav a {
+    margin-right: 20px;
+    color: #616D72
+}
+
+header>nav a:hover {
+    color: #E61F61;
+    transition: all 0.5s;
+}
+
+
+header div#bt_login a {
+    font-size: 0.8em;
+    color: #E61F61;
+}
+
+header div#bt_login a:hover {
+    color: #b3b3b3;
+    transition: all 0.5s;
+}
+
+
+div#sc1_content {
+    margin: 100px auto;
+    text-align: center;
+    font-family: 'GhotamL', sans-serif;
+    color: #91A3AD;
+    font-size: 2em;
+}
+
+p#p2 {
+    font-size: 0.8em;
+}
+
+div#sc1_content h1 {
+    margin: 10px 0px 10px 0px;
+    font-size: 2em;
+    color: #E61F61;
+}
+
+div#sc1_content button {
+    margin-top: 50px;
+    padding: 15px 60px;
+    background-color: rgba(0, 0, 0, 0);
+    border: solid 1px #E61F61;
+    color: #E61F61;
+    font-size: 0.5em;
+    font-family: 'GhotamM';
+}
+
+div#sc1_content button:hover {
+    cursor: pointer;
+    background-color: #E61F61;
+    color: black;
+    transition: all 0.8s;
+}
