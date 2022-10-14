@@ -23,8 +23,7 @@ main {
 
 section.login {
     background-color: white;
-    width: 95vw;
-    height: 95vh;
+    width: 300px;
     border-radius: 20px;
     margin: auto;
     overflow: hidden;
@@ -38,4 +37,58 @@ section.login div#imagem {
 
 section.login div#formulario {
     padding: 10px;
+}
+
+div.container-input {
+    background-color: #5f2c82;
+    border-radius: 10px;
+    margin-top: 10px;
+    padding-left: 5px;
+}
+
+div.container-input input {
+    padding: 10px;
+    border-radius: 10px;
+    width: 90%;
+}
+
+.material-symbols-outlined {
+    font-variation-settings:
+        'FILL' 1,
+        'wght' 400,
+        'GRAD' 0,
+        'opsz' 48;
+    color: white;
+    margin-top: 10px;
+}
+
+input.bt-entrar {
+    margin-top: 10px;
+    width: 100%;
+    padding: 15px;
+    border-radius: 10px;
+    border: solid #49a09d;
+    background-color: #49a09d;
+    color: white;
+}
+
+div.remember {
+    margin-top: 10px;
+    width: 100%;
+    padding: 15px;
+    border-radius: 10px;
+    background-color: white;
+    border: solid #49a09d;
+    text-align: center;
+}
+
+div.remember a {
+    text-decoration: none;
+    color: #49a09d;
+    font-size: 0.8em;
+}
+
+div.remember span.material-symbols-outlined {
+    margin: 0;
+    color: #49a09d;
 }
