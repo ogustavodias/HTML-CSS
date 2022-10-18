@@ -7,29 +7,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mini Portfólio</title>
     <link rel="stylesheet" href="src/css/style.css">
+    <link rel="stylesheet" href="./src/css/rolagem.css">
 </head>
 
 <body>
     <main class="card">
         <div class="personal-informations">
-            <img src="src/imagens/foto-perfil.jpg" alt="foto de perfil">
+            <img class="profile-image" src="src/imagens/foto-perfil.jpg" alt="foto de perfil">
             <h1 class="name">Gustavo Alves Dias</h1>
             <h2 class="position">Desenvolvedor Front-end Jr</h2>
         </div>
 
         <div class="content">
             <nav class="navigation-bar">
-                <div id="nav-bar-1" class="nav-bar">
+                <div class="nav-bar nav-bar-1 selecionada" id="nav-bar-1">
                     <img src="src/imagens/sobre.gif" alt="icone de sobre mim">
                 </div>
 
-                <div id="nav-bar-2" class="nav-bar">
+                <div class="nav-bar nav-bar-2" id="nav-bar-2">
                     <img src="src/imagens/coracao.gif" alt="icone de redes sociais">
                 </div>
             </nav>
 
             <div class="navigation-informations">
-                <div class="informacao" id="informacao-sobre">
+                <div class="informacao selecionada" id="informacao-nav-bar-1">
                     <h3 class="sub-titulo">Sobre</h3>
                     <div class="descricao">
                         <p>Olá, meu nome é Gustavo Alves Dias, seja bem vindo(a)!</p>
@@ -39,10 +40,16 @@
                             consectetur adipisicing elit. Saepe nihil, facilis harum hic asperiores aliquid eveniet
                             labore velit dolore placeat ad reprehenderit minus dicta voluptate odit illum et culpa
                             omnis.</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo explicabo numquam iste
+                            perspiciatis atque molestias distinctio, ea, ad, corrupti maiores tenetur pariatur.
+                            Laudantium minima eos possimus reiciendis amet sunt culpa.</p>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Earum nesciunt cumque dignissimos
+                            nisi hic unde saepe voluptas quae laborum, est id eveniet sequi adipisci minima optio qui at
+                            nemo inventore!</p>
                     </div>
                 </div>
 
-                <div class="informacao" id="informacao-redes">
+                <div class="informacao" id="informacao-nav-bar-2">
                     <h3 class="sub-titulo">Minhas redes</h3>
                     <ul class="redes">
                         <li class="networks" id="curriculo"><a target="_blank" href="#">Currículo</a></li>
@@ -53,6 +60,8 @@
             </div>
         </div>
     </main>
+
+    <script src="src/js/index.js"></script>
 </body>
 
 </html>
