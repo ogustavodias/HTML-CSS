@@ -33,7 +33,7 @@ main.card {
     align-items: center;
     padding: 15px 0;
     border-radius: 20px;
-    height: 425px;
+    height: 450px;
 }
 
 div.qr-code {
@@ -66,4 +66,9 @@ div.description p {
     margin: 20px auto 0 auto;
     color: hsl(220, 15%, 55%);
     font-size: 0.9em;
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
 }
