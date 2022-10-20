@@ -1,0 +1,149 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    transition: all 0.5s;
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+
+body {
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    background-color: hsl(30, 38%, 92%);
+}
+
+main.card {
+    width: 320px;
+    height: 560px;
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+div.preview-img {
+    height: 220px;
+    background: url(../images/image-product-mobile.jpg) no-repeat center top/cover;
+}
+
+div.perfume-informations {
+    padding: 20px;
+}
+
+div.perfume-informations .perfume-category {
+    text-transform: uppercase;
+    color: hsl(228, 12%, 48%);
+    font-weight: 500;
+    font-size: 11px;
+    letter-spacing: 5px;
+}
+
+div.perfume-informations .perfume-name {
+    font-family: 'Fraunces', serif;
+    color: hsl(212, 21%, 14%);
+    margin: 10px 0;
+}
+
+div.perfume-informations .perfume-description {
+    font-size: 14px;
+    color: hsl(228, 12%, 48%);
+    margin-bottom: 20px;
+}
+
+
+div.perfume-price {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 15px;
+}
+
+div.perfume-price h2 {
+    font-family: 'Fraunces', serif;
+}
+
+div.perfume-price .price-now {
+    color: hsl(158, 36%, 37%);
+    font-size: 30px;
+}
+
+div.perfume-price .previous-price {
+    color: hsl(228, 12%, 48%);
+    font-size: 12px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    padding: 10px 0px 0px 0px;
+    text-decoration: line-through;
+}
+
+button.add-cart {
+    width: 100%;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    background-color: hsl(158, 36%, 37%);
+    color: white;
+    border: none;
+    border-radius: 8px;
+}
+
+button.add-cart:hover {
+    background-color:hsl(158, 36%, 24%);
+    transition: background ease 0.5s;
+    cursor: pointer;
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+}
+
+/* # Front-end Style Guide
+
+## Layout
+
+The designs were created to the following widths:
+
+- Mobile: 375px
+- Desktop: 1440px
+
+## Colors
+
+### Primary
+
+- Dark cyan: hsl(158, 36%, 37%)
+- Cream: hsl(30, 38%, 92%)
+
+### Neutral
+
+- Very dark blue: hsl(212, 21%, 14%)
+- Dark grayish blue: hsl(228, 12%, 48%)
+- White: hsl(0, 0%, 100%)
+
+## Typography
+
+### Body Copy
+
+- Font size (paragraph): 14px
+
+### Font
+
+- Family: [Montserrat](https://fonts.google.com/specimen/Montserrat)
+- Weights: 500, 700
+
+- Family: [Fraunces](https://fonts.google.com/specimen/Fraunces)
+- Weights: 700 */

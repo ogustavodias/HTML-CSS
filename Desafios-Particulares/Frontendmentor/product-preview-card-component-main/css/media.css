@@ -1,0 +1,21 @@
+@charset "UTF-8";
+
+@media only screen and (min-width: 1440px) {
+    main.card {
+        display: flex;
+        flex-direction: row;
+        width: 520px;
+        height: 390px;
+    }
+
+    div.preview-img {
+        background: url(../images/image-product-desktop.jpg) no-repeat center center / cover;
+        width: 50%;
+        height: 100%;
+    }
+
+    div.perfume-informations {
+        width: 50%;
+        height: 100%;
+    }
+}
