@@ -29,6 +29,11 @@ main.card-container {
     margin: 40px 0;
 }
 
+main.card-container:hover {
+    box-shadow: .75rem .75rem 12.5rem 1.25rem rgba(203, 165, 12, 0.4);
+    transform: scale(1.05);
+}
+
 main.card-container section {
     color: hsl(0, 0%, 95%);
     height: 370px;
