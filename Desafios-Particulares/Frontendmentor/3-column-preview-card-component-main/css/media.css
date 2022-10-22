@@ -1,0 +1,28 @@
+@charset "UTF-8";
+
+@media only screen and (min-width: 768px) {
+    
+    body {
+        height: 100vh;
+    }
+
+    main.card-container {
+        display: flex;
+        flex-direction: row;
+        max-width: 900px;
+        margin: 0;
+    }
+
+    main.card-container section {
+        height: 450px;
+    }
+
+    div.category-description p{
+        margin-bottom: 60px;
+    }
+
+    footer {
+        position: absolute;
+        bottom: 0;
+    }
+}

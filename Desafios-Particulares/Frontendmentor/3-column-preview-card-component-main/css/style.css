@@ -1,0 +1,108 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Big Shoulders Display', cursive;
+    transition: all 0.5s;
+}
+
+:root {
+    --bright-orange: rgba(227, 136, 38, 0.9);
+    --dark-cyan: rgba(0, 104, 112, 0.9);
+    --very-dark-cyan: hsl(179, 100%, 13%, 0.9);
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: url(../images/background-2.jpg) no-repeat center center / cover;
+}
+
+main.card-container {
+    max-width: 300px;
+    border-radius: 8px;
+    overflow: hidden;
+    margin: 40px 0;
+}
+
+main.card-container section {
+    color: hsl(0, 0%, 95%);
+    height: 370px;
+}
+
+main.card-container section:hover {
+    backdrop-filter: blur(5px);
+}
+
+section.sedans {
+    background-color: var(--bright-orange);
+}
+
+section.suvs {
+    background-color: var(--dark-cyan);
+}
+
+section.luxury {
+    background-color: var(--very-dark-cyan);
+}
+
+section div.category-description {
+    height: 100%;
+    max-width: 53%;
+    padding: 50px;
+}
+
+div.category-description h1 {
+    text-transform: uppercase;
+    font-family: 'Big Shoulders Display', cursive;
+    margin: 20px 0;
+}
+
+div.category-description p {
+    color: hsla(0, 0%, 100%, 0.75);
+    font-size: 15px;
+    height: 150px;
+}
+
+div.category-description a {
+    text-decoration: none;
+    background-color: hsl(0, 0%, 95%);
+    padding: 15px 30px;
+    border-radius: 20px;
+    font-family: 'Lexend Deca', sans-serif;
+}
+
+div.category-description a:hover {
+    background-color: transparent;
+    color: hsl(0, 0%, 95%);
+    border: 2px solid hsl(0, 0%, 95%);
+}
+
+.sedans a {
+    color: var(--bright-orange);
+}
+
+.suvs a {
+    color: var(--dark-cyan);
+}
+
+.luxury a {
+    color: var(--very-dark-cyan);
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+footer {
+    color: white;
+}
