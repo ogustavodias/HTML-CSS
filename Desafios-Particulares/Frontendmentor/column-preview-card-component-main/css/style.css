@@ -9,9 +9,9 @@
 }
 
 :root {
-    --bright-orange: rgba(227, 136, 38, 0.9);
-    --dark-cyan: rgba(0, 104, 112, 0.9);
-    --very-dark-cyan: hsl(179, 100%, 13%, 0.9);
+    --bright-orange: rgba(227, 136, 38, 0.8);
+    --dark-cyan: rgba(0, 104, 112, 0.8);
+    --very-dark-cyan: hsl(179, 100%, 13%, 0.8);
 }
 
 body {
@@ -19,7 +19,7 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background: url(../images/background-2.jpg) no-repeat center center / cover;
+    background: url(../images/Pexels\ Videos\ 2609.gif) no-repeat center center / cover;
 }
 
 main.card-container {
@@ -30,7 +30,6 @@ main.card-container {
 }
 
 main.card-container:hover {
-    box-shadow: .75rem .75rem 12.5rem 1.25rem rgba(203, 165, 12, 0.4);
     transform: scale(1.05);
 }
 

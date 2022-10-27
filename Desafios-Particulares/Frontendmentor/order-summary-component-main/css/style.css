@@ -1,0 +1,124 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Red Hat Display', sans-serif;
+    font-size: 1em;
+    transition: all ease-in-out 0.3s;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background: hsl(225, 100%, 94%) url(../images/pattern-background-mobile.svg) no-repeat top center / contain;
+}
+
+main.card {
+    margin: auto;
+    background-color: white;
+    max-width: 310px;
+    min-height: 500px;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+section.card-header-img {
+    height: 150px;
+    width: 100%;
+    background: url(../images/illustration-hero.svg) no-repeat center center / cover;
+}
+
+section.card-info {
+    text-align: center;
+    margin-top: 40px;
+}
+
+section.card-info>h1 {
+    color: hsl(223, 47%, 23%);
+    font-weight: 900;
+    font-size: 1.4em;
+}
+
+section.card-info>p {
+    color: hsl(224, 23%, 55%);
+    margin: 20px;
+}
+
+div.plan {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-color: hsl(225, 100%, 98%);
+    font-weight: 700;
+    font-size: 0.9em;
+    padding: 15px;
+    width: 80%;
+    margin: auto;
+    border-radius: 10px;
+    gap: 50px;
+}
+
+div.plan-options {
+    display: flex;
+    gap: 10px;
+}
+
+div.plan a {
+    color: hsl(245, 75%, 52%);
+}
+
+div.plan a:hover {
+    text-decoration: none;
+    opacity: 0.7;
+}
+
+div.plan h3.plan-name {
+    font-weight: 900;
+}
+
+div.plan h3.plan-price {
+    margin-top: 5px;
+    color: hsl(224, 23%, 55%);
+    font-weight: 600;
+}
+
+section.card-info>a {
+    display: block;
+    margin: 0px 20px 10px 20px;
+    padding: 15px;
+    text-decoration: none;
+    border-radius: 10px;
+    font-weight: 900;
+}
+
+section.card-info>a.proceed-payment {
+    margin-top: 20px;
+    background-color: hsl(245, 75%, 52%);
+    color: white;
+    box-shadow: 0px 15px 8px -2px hsla(245, 75%, 52%, 0.15);
+}
+
+section.card-info>a.proceed-payment:hover {
+    opacity: 0.7;
+}
+
+section.card-info>a.cancel-order {
+    color: hsl(224, 23%, 55%);
+}
+
+section.card-info>a.cancel-order:hover {
+    color: hsl(223, 47%, 23%);
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}

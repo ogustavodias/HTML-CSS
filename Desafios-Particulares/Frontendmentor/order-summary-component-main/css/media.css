@@ -1,0 +1,17 @@
+@charset "UTF-8";
+
+@media only screen and (min-width: 768px) {
+
+    body {
+        background: hsl(225, 100%, 94%) url(../images/pattern-background-desktop.svg) no-repeat top center / contain;
+    }
+
+    main.card {
+        max-width: 400px;
+        min-height: 550px;
+    }
+
+    div.plan {
+        gap: 120px;
+    }
+}
