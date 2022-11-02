@@ -1,0 +1,145 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Overpass', sans-serif;
+    font-size: 15px;
+    transition: all ease-in-out 0.3s;
+}
+
+:root {
+    /*### Primary */
+    --orange: hsl(25, 97%, 53%);
+    /* ### Neutral */
+    --light-grey: hsl(217, 12%, 63%);
+    --medium-grey: hsl(216, 12%, 54%);
+    --dark-blue: hsl(213, 19%, 18%);
+    --very-dark-blue: hsl(216, 12%, 8%);
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: var(--very-dark-blue);
+}
+
+main.card {
+    background-image: linear-gradient(to bottom, hsla(213, 20%, 18%, 0.8), hsla(213, 13%, 14%, 0.8));
+    color: white;
+    width: 300px;
+    min-height: 300px;
+    border-radius: 20px;
+    padding: 20px;
+}
+
+main.card section {
+    max-width: 100%;
+    margin: auto;
+}
+
+.rate span {
+    background-color: hsla(216, 12%, 54%, 0.2);
+    padding: 5px 10px;
+    border-radius: 50%;
+}
+
+.rate span img {
+    width: 12px;
+}
+
+main.card h1 {
+    margin: 30px 0px 10px;
+    font-weight: 700;
+    font-size: 1.2em;
+}
+
+main.card p {
+    color: var(--light-grey);
+    font-weight: 400;
+    font-size: 0.8em;
+}
+
+.rate-container {
+    width: 100%;
+}
+
+.rate-container ul {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.rate-container ul li {
+    list-style: none;
+    background-color: hsla(216, 12%, 54%, 0.2);
+    color: var(--light-grey);
+    font-size: 0.8em;
+    padding: 10px 15px;
+    border-radius: 50%;
+    margin: 20px 0;
+}
+
+.rate-container ul li:hover {
+    cursor: pointer;
+    background-color: var(--orange);
+    color: white;
+}
+
+.rate button#bt-submit {
+    background-color: var(--orange);
+    color: white;
+    width: 100%;
+    border: none;
+    padding: 10px;
+    border-radius: 20px;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 0.8em;
+}
+
+.rate button#bt-submit:hover {
+    background-color: white;
+    color: var(--orange);
+    cursor: pointer;
+}
+
+section.thank-rate {
+    text-align: center;
+}
+
+.thank-rate span img {
+    width: 100px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.thank-rate div.count {
+    display: flex;
+    background-color: hsla(216, 12%, 54%, 0.2);
+    width: 135px;
+    padding: 5px;
+    margin: auto;
+    border-radius: 20px;
+    gap: 2px;
+}
+
+.thank-rate div.count h2 {
+    color: var(--orange);
+    font-weight: 400;
+    font-size: 0.8em;
+}
+
+.rate-container ul li.selected {
+    background-color: var(--orange);
+    color: white;
+}
+
+section.thank-rate {
+    display: none;
+}
