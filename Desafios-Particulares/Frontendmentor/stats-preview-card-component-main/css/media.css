@@ -1,0 +1,35 @@
+@charset "UTF-8";
+
+@media only screen and (max-width: 1024px) {
+    main.card {
+        max-width: 600px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+
+    main.card {
+        flex-direction: column-reverse;
+        max-width: 300px;
+        min-height: 700px;
+    }
+
+    div.smiling-workers-img {
+        width: 100%;
+        height: 30%;
+        background: url(../images/image-header-mobile.jpg) no-repeat center center / cover;
+    }
+
+    div.container-informations {
+        height: 80%;
+        width: 100%;
+    }
+
+    div.informations {
+        width: 90%;
+    }
+
+    footer {
+        position: relative;
+    }
+}
