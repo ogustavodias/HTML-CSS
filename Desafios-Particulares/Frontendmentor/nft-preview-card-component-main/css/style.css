@@ -1,0 +1,122 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+
+:root {
+    /* ### Primary */
+    --soft-blue: hsl(215, 51%, 70%);
+    --cyan: hsl(178, 100%, 50%);
+
+    /* ### Neutral */
+    /* main BG */
+    --very-dark-blue-main: hsl(217, 54%, 11%);
+    /* card BG */
+    --very-dark-blue-card: hsl(216, 50%, 16%);
+    /* line */
+    --very-dark-blue-line: hsl(215, 32%, 27%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 18px;
+    font-family: 'Outfit', sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(to top, var(--very-dark-blue-line), var(--very-dark-blue-card));
+}
+
+div.card {
+    display: flex;
+    justify-content: center;
+    height: 500px;
+    width: 300px;
+    border-radius: 10px;
+    background-color: var(--very-dark-blue-card);
+    color: white;
+}
+
+div.card:hover {
+    transform: scale(.98);
+    cursor: pointer;
+    transition: ease-in-out .5s;
+}
+
+div.internal-container {
+    width: 88%;
+    margin-top: 15px;
+}
+
+.internal-container picture {
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.internal-container picture:hover::after {
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    content: url(../images/icon-view.svg);
+    background-color: hsl(178, 100%, 50%, 0.5);
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.internal-container picture img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+div.general-informations p {
+    color: var(--soft-blue);
+    font-size: 0.8em;
+    font-weight: 300;
+}
+
+.general-informations h1 {
+    margin-top: 15px;
+}
+
+.general-informations>p {
+    margin: 15px 0px;
+}
+
+div.line-value-time {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid var(--very-dark-blue-line);
+    padding-bottom: 10px;
+}
+
+.line-value-time .current-value {
+    color: var(--cyan);
+    font-weight: 400;
+}
+
+div.creator-copyright {
+    display: flex;
+    margin-top: 15px;
+    gap: 10px;
+}
+
+.creator-copyright span>img {
+    width: 30px;
+    border: 1px solid white;
+    border-radius: 50%;
+}
+
+.creator-copyright p>strong {
+    font-weight: 300;
+    font-size: 1em;
+    color: white;
+}
