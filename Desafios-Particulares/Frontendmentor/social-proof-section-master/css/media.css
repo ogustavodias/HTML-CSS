@@ -1,0 +1,68 @@
+@charset "UTF-8";
+
+@media only screen and (min-width: 768px) {
+
+    body {
+        background: url(../images/bg-pattern-top-desktop.svg) no-repeat top left / 100% 30%, url(../images/bg-pattern-bottom-desktop.svg) no-repeat bottom right / 100% 30%;
+    }
+
+    main {
+        max-width: 768px;
+    }
+
+    section.section-top {
+        flex-direction: row;
+    }
+
+    .section-top .service-description {
+        min-height: 100%;
+        width: 50%;
+    }
+
+}
+
+@media only screen and (min-width: 992px) {
+
+    main {
+        max-width: 1000px;
+    }
+
+    .section-top .service-description {
+        min-height: 100%;
+        width: 40%;
+        text-align: left;
+    }
+
+    div.rates-container .rates {
+        display: flex;
+        flex-direction: row;
+        padding: 15px;
+        align-items: center;
+        gap: 30px;
+    }
+
+    .rates-container .rate-two {
+        margin-left: 40px;
+    }
+
+    .rates-container .rate-three {
+        margin-left: 80px;
+    }
+
+    section.section-bottom {
+        flex-direction: row;
+        margin-top: 60px;
+    }
+
+    .cards-review {
+        height: 330.2px ;
+    }
+
+    .card-review-two {
+       margin-top: 15px;
+    }
+    .card-review-three {
+        margin-top: 30px;
+    }
+
+}

@@ -1,0 +1,129 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;500;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'League Spartan', sans-serif;
+    font-size: 20px;
+    transition: all .5s linear;
+}
+
+body {
+    min-height: 100vh;
+    background: url(../images/bg-pattern-top-mobile.svg) no-repeat top left / 100% 30%, url(../images/bg-pattern-bottom-mobile.svg) no-repeat bottom right / 100% 30%;
+    display: flex;
+    justify-content: center;
+}
+
+:root {
+    /*    ### Primary */
+    --very-dark-magenta: hsl(300, 43%, 22%);
+    --soft-pink: hsl(333, 80%, 67%);
+
+    /* ### Neutral */
+    --dark-grayish-magenta: hsl(303, 10%, 53%);
+    --light-grayish-magenta: hsl(300, 24%, 96%);
+}
+
+main {
+    text-align: center;
+    max-width: 380px;
+    margin-top: 50px;
+}
+
+section.section-top {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.section-top h1 {
+    font-size: 2.5em;
+    margin: auto;
+    color: var(--very-dark-magenta);
+}
+
+.section-top p {
+    color: var(--dark-grayish-magenta);
+    margin-top: 20px;
+}
+
+div.rates-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.rates-container .rates {
+    background-color: var(--light-grayish-magenta);
+    padding: 20px;
+    border-radius: 10px;
+    color: var(--very-dark-magenta);
+}
+
+.rates > img {
+    margin-bottom: 10px;
+}
+
+.rates:hover {
+    cursor: pointer;
+    transform: scale(.9);
+}
+
+section.section-bottom {
+    margin-top: 40px;
+    margin-bottom: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+div.cards-review {
+    background-color: var(--very-dark-magenta);
+    border-radius: 10px;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.cards-review p {
+    color: white;
+    text-align: left;
+    font-weight: 400;
+}
+
+.cards-review .card-top {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap:20px;
+}
+
+.cards-review:hover {
+    cursor: pointer;
+    transform: scale(.9);
+}
+
+.card-top span.user-img img {
+    width: 50px;
+    border-radius: 50%;
+}
+
+.card-top .user-infos {
+    text-align: left;
+}
+
+.user-infos .user-name {
+    color: white;
+    margin-bottom: 5px;
+    font-weight: 500;
+}
+
+.user-infos .user-type {
+    color: var(--soft-pink);
+    font-weight: 500;
+}
+
