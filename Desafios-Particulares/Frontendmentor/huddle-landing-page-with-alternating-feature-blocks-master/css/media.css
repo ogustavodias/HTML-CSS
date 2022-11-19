@@ -1,0 +1,76 @@
+@charset "UTF-8";
+
+@media only screen and (min-width: 992px) {
+    div.section-content {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .section-content span {
+        width: 50%;
+        text-align: center;
+    }
+
+    div.text-content {
+        width: 50%;
+    }
+
+    section#first-section {
+        padding: 40px 80px;
+        background: var(--very-pale-cyan) url(../images/bg-hero-desktop.svg) no-repeat center center / contain;
+    }
+
+    #first-section header>span>img {
+        width: 200px;
+    }
+
+    #first-section .section-content .text-content {
+        width: 40%;
+    }
+
+    #first-section .section-content span {
+        width: 60%;
+        text-align: center;
+    }
+
+    #first-section .section-content img {
+        width: 80%;
+    }
+
+    #second-section>.section-content,
+    #third-section>.section-content,
+    #fourth-section>.section-content {
+        max-width: 1200px;
+    }
+
+    #second-section>.section-content,
+    #fourth-section>.section-content {
+        flex-direction: row-reverse;
+    }
+
+    footer {
+        position: relative;
+    }
+
+    footer .copyright {
+        position: absolute;
+        bottom: 0;
+    }
+
+    div.footer-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        padding-bottom: 100px;
+    }
+
+    .footer-container .general-informations {
+        width: 30%;
+    }
+
+    .footer-container ul {
+        columns: 3;
+    }
+
+}

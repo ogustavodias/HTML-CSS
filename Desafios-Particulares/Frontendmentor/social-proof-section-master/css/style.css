@@ -63,7 +63,7 @@ div.rates-container {
     color: var(--very-dark-magenta);
 }
 
-.rates > img {
+.rates>img {
     margin-bottom: 10px;
 }
 
@@ -99,7 +99,7 @@ div.cards-review {
     display: flex;
     flex-direction: row;
     align-items: center;
-    gap:20px;
+    gap: 20px;
 }
 
 .cards-review:hover {
@@ -126,4 +126,3 @@ div.cards-review {
     color: var(--soft-pink);
     font-weight: 500;
 }
-
