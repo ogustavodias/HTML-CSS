@@ -1,0 +1,43 @@
+@charset "UTF-8";
+
+@media only screen and (min-width: 768px) {
+
+    body {
+        background: var(--violet) url(../images/bg-desktop.svg) no-repeat center center / cover;
+    }
+
+    div.container {
+        justify-content: center;
+        gap: 10px;
+    }
+
+    main {
+        flex-direction: row;
+        align-items: center;
+        max-width: 1200px;
+    }
+
+    section {
+        max-width: none;
+    }
+
+    section.illustration {
+        min-width: 60%;
+    }
+
+    section.description {
+        min-width: 40%;
+        text-align: left;
+    }
+
+    section.description a {
+        margin: unset;
+        text-align: center;
+    }
+
+    footer {
+        width: 100%;
+        justify-content: end;
+    }
+
+}
