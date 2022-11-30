@@ -90,6 +90,7 @@ section.description a {
     padding: 10px 0;
     margin: auto;
     border-radius: 20px;
+    color: var(--violet);
 }
 
 section.description a:hover {
