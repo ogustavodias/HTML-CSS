@@ -1,0 +1,198 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    /* #Primary */
+    --strong-cyan: hsl(171, 66%, 44%);
+    --light-blue: hsl(233, 100%, 69%);
+
+    /* #Neutral */
+    --dark-grayish-blue: hsl(210, 10%, 33%);
+    --grayish-blue: hsla(202, 11%, 66%, 0.233);
+}
+
+body {
+    min-height: 100vh;
+    font-size: 18px;
+    font-family: 'Bai Jamjuree', sans-serif;
+    background: white url(../images/bg-header-mobile.png) no-repeat top center / contain;
+}
+
+main {
+    padding: 40px;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+section {
+    margin-bottom: 100px;
+    text-align: center;
+}
+
+section img {
+    max-width: 100%;
+    margin: 40px 0;
+}
+
+main p {
+    color: gray;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+h2 {
+    font-size: 1.3em;
+}
+
+h3 {
+    font-size: 1em;
+}
+
+p {
+    font-size: 0.8em;
+}
+
+h1,
+h2,
+h3,
+p {
+    margin: 0 auto 10px auto;
+    max-width: 500px;
+
+}
+
+section#first-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#first-section .business-logo {
+    width: 80px;
+    margin-bottom: 20px;
+}
+
+div.download-bt-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+
+div.download-bt-container a {
+    padding: 10px 40px;
+    width: 300px;
+    border-radius: 30px;
+    color: white;
+}
+
+.download-bt-container a.bt-download-ios {
+    background-color: var(--strong-cyan);
+}
+
+.download-bt-container a.bt-download-mac {
+    background-color: var(--light-blue);
+}
+
+.download-bt-container a:hover {
+    opacity: 0.6;
+    transition: all 0.3s ease;
+    box-shadow: inset rgba(0, 0, 0, 0.3) 0px 0px 0px 2px;
+}
+
+section#second-section {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+#second-section div#container {
+    display: flex;
+    flex-direction: column;
+}
+
+#second-section div.services {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+section#fourth-section {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+section#fourth-section>div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+div#companies img {
+    width: 120px;
+}
+
+
+footer {
+    padding: 40px;
+    text-align: center;
+    background-color: var(--grayish-blue);
+}
+
+footer #footer-main {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+img#business-logo-footer {
+    width: 50px;
+    margin: auto;
+}
+
+footer ul {
+    columns: 1;
+}
+
+footer ul li {
+    margin-bottom: 15px;
+}
+
+footer li:hover {
+    color: var(--strong-cyan);
+    cursor: pointer;
+}
+
+footer div#social-media {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-bottom: 30px;
+}
+
+#social-media img:hover {
+    cursor: pointer;
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}

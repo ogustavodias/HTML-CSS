@@ -1,0 +1,38 @@
+@charset "UTF-8";
+
+@media only screen and (min-width: 992px) {
+
+    body {
+        justify-content: center;
+        background: hsla(0, 100%, 98%, 0.7) url(../images/bg-pattern-desktop.svg) no-repeat left bottom / cover;
+    }
+
+    div#container {
+        max-width: 1200px;
+        flex-direction: row-reverse;
+    }
+
+    section#first-section {
+        width: 50%;
+    }
+
+    #first-section span.logo {
+        display: none;
+    }
+
+    section#second-section {
+        gap: 50px;
+        min-height: 100%;
+        text-align: left;
+        width: 50%;
+    }
+
+    #second-section h1 {
+        margin: unset;
+    }
+
+    #second-section span.logo img {
+        display: block;
+        margin-bottom: 80px;
+    }
+}

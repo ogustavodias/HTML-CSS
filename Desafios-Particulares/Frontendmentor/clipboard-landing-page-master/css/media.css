@@ -1,0 +1,36 @@
+@charset "UTF-8";
+
+@media only screen and (min-width: 1000px) {
+    body {
+        background: white url(../images/bg-header-desktop.png) no-repeat top center / contain;
+    }
+
+    main {
+        max-width: 1200px;
+    }
+
+    div.download-bt-container {
+        flex-direction: row;
+    }
+
+    section#second-section div#container {
+        flex-direction: row;
+        align-items: center;
+    }
+
+    #second-section #container div.services {
+        width: 50%;
+        text-align: left;
+    }
+
+    #second-section #container img {
+        width: 50%;
+    }
+
+    section#fourth-section>div {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+    }
+}
