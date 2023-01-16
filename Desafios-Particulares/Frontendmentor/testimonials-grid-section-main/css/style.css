@@ -1,0 +1,113 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600&display=swap');
+
+:root {
+    --moderate-violet: hsl(263, 55%, 52%);
+    --very-dark-grayish-blue: hsl(217, 19%, 35%);
+    --very-dark-blackish-blue: hsl(219, 29%, 14%);
+    --white: hsl(0, 0%, 100%);
+    --light-gray: hsl(0, 0%, 81%);
+    --light-grayish-blue: hsl(210, 46%, 95%);
+
+    /* Note for text colors:
+    1. "Verified Graduate" has the same color as the person's name with 50% opacity
+    2. Review paragraphs inside the quotations have the same color as well, but are at 70% opacity */
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 13px;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    background: var(--light-grayish-blue);
+}
+
+h1 {
+    font-size: 1.5rem;
+}
+
+h2,
+h3 {
+    font-size: 1rem;
+}
+
+h3,
+p {
+    opacity: 50%;
+}
+
+main {
+    display: grid;
+    gap: 20px;
+    max-width: 375px;
+    margin: 40px 0;
+    transition: max-width .3s ease-in-out;
+}
+
+main>article {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 30px;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform .3s ease-in-out;
+}
+
+main>article:hover {
+    transform: scale(.9);
+    cursor: pointer;
+} 
+
+article header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 15px;
+}
+
+article .user-image {
+    width: 30px;
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    border-radius: 50%;
+}
+
+main article:nth-child(1) {
+    background: var(--moderate-violet);
+    color: var(--white);
+}
+
+main article:nth-child(2) {
+    background: var(--very-dark-grayish-blue);
+    color: var(--white);
+}
+
+main article:nth-child(3),
+main article:nth-child(5) {
+    background: var(--white);
+}
+
+main article:nth-child(4) {
+    background: var(--very-dark-blackish-blue);
+    color: var(--white);
+}
+
+footer .attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+footer .attribution a {
+    color: hsl(228, 45%, 44%);
+}
