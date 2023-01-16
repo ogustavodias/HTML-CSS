@@ -68,7 +68,7 @@ main>article {
 main>article:hover {
     transform: scale(.9);
     cursor: pointer;
-} 
+}
 
 article header {
     display: flex;
@@ -86,6 +86,16 @@ article .user-image {
 main article:nth-child(1) {
     background: var(--moderate-violet);
     color: var(--white);
+    position: relative;
+    z-index: 1;
+}
+
+main article:nth-child(1)::before {
+    content: url(../images/bg-pattern-quotation.svg);
+    position: absolute;
+    top: 0;
+    right: 10%;
+    z-index: -1;
 }
 
 main article:nth-child(2) {
