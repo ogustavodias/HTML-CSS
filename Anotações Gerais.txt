@@ -52,6 +52,7 @@ font-size = usar sempre em px ou em, lembrando que 1em = 16px
 : = pseudo-class
 :: = pseudo-element
 > = children
+img:not([src$="svg"]) = Imagem exceto aquela cujo atributo src termina em "svg"
 
 um id deve ser usado em apenas uma tag, enquanto uma classe pode ser usado para englobar várias tags. 
 
