@@ -10,56 +10,27 @@
 </head>
 
 <body>
-    <main>
-        <div class="container">
-            <div class="left-bar">
-                <picture class="cards">
-                    <div class="front-card">
-                        <img src="./images/bg-card-front.png" alt="front card">
-                        <div class="card-infos">
-                            <img src="./images/card-logo.svg" alt="card logo">
-                            <span class="card-number">0000 0000 0000 00000</span>
-                            <div class="bottom-card">
-                                <span class="name">JANE APPLESEED</span>
-                                <span class="cvc">00/00</span>
-                            </div>
-                        </div>
+    <main class="container">
+        <div class="card-bar">
+            <picture>
+                <div class="card-container">
+                    <img src="./images/bg-card-front.png" alt="front card">
+                    <div class="card-info">
+                            <img class="logo" src="./images/card-logo.svg" alt="card logo">
+                            <span class="number">0000 0000 0000 0000</span>
+                            <span class="name">JANE APPLESEED</span>
+                            <span class="exp-date">00/00</span>
                     </div>
-
-                    <div class="back-card">
-                        <img src="./images/bg-card-back.png" alt="back card">
-                        <span class="cvc">000</span>
-                    </div>
-                </picture>
-            </div>
-
-            <form action="#">
-                <div class="name">
-                    <label for="name">CARDHOLDER NAME</label>
-                    <input type="text" name="name" id="name" placeholder="e.g. Jane Appleseed">
                 </div>
-
-                <div class="card-number">
-                    <label for="card-number">CARD NUMBER</label>
-                    <input type="text" name="card-number" id="card-number" placeholder="e.g. 1234 5678 9123 0000">
+                <div class="card-container">
+                    <img src="./images/bg-card-back.png" alt="back card">
                 </div>
-
-                <div class="exp-date">
-                    <label for="card-mm">EXP. DATE (MM/YY)</label>
-                    <input type="text" name="card-mm" id="card-mm" placeholder="MM">
-                    <input type="text" name="card-yy" id="card-yy" placeholder="YY">
-                </div>
-
-                <div class="cvc">
-                    <label for="cvc">cvc</label>
-                    <input type="text" name="cvc" id="cvc" placeholder="e.g. 123">
-                </div>
-
-                <div class="button">
-                    <button>Confirm</button>
-                </div>
-            </form>
+            </picture>
         </div>
+
+        <form action="">
+
+        </form>
     </main>
 </body>
 

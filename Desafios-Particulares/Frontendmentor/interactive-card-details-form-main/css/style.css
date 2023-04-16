@@ -20,126 +20,76 @@ body {
     font-family: 'Space Grotesk', sans-serif;
 }
 
-main .container {
-    display: grid;
-    grid-template-columns: 1fr 2fr;
+img {
+    max-width: 100%;
+}
+
+.container {
     max-width: 1440px;
     margin: 0 auto;
 }
 
-.left-bar {
-    position: relative;
+main.container {
+    display: flex;
+}
+
+.card-bar {
+    min-height: 100vh;
+    padding: 60px;
     display: grid;
     grid-template-columns: 1fr;
     align-items: center;
-    min-height: 100vh;
     background: url(../images/bg-main-desktop.png) no-repeat center center / cover;
 }
 
-.left-bar picture {
-    position: absolute;
+.card-bar picture {
     display: grid;
     grid-template-columns: 1fr;
     gap: 40px;
 }
 
-.left-bar picture>div:nth-child(1) {
-    transform: translateX(100px);
-}
-
-.left-bar picture>div:nth-child(2) {
-    transform: translateX(200px);
-}
-
-.left-bar picture>div {
+.card-bar picture .card-container:nth-child(1) {
+    transform: translateX(150px);
     position: relative;
+
 }
 
-.left-bar picture .front-card .card-infos {
+.card-bar picture .card-container:nth-child(1) .card-info {
     position: absolute;
-    padding: 15px;
-    top: 0px;
-    left: 0px;
+    top: 0;
     display: grid;
     width: 100%;
     height: 100%;
-    grid-template-columns: 1fr;
-}
-
-.left-bar picture .front-card .card-infos .card-number,
-.left-bar picture .front-card .card-infos .bottom-card {
-    align-self: end;
-}
-
-.left-bar picture .front-card .card-infos .card-number {
-    text-align: center;
-    font-size: 1.5rem;
-    letter-spacing: 2px;
-    color: var(--white);
-}
-
-.left-bar picture .front-card .card-infos .bottom-card {
-    display: flex;
-    justify-content: space-between;
-    padding: 0 30px;
-    font-size: 0.7rem;
-    color: var(--light-grayish-violet);
-}
-
-.left-bar picture .back-card {
-    display: grid;
-    grid-template-columns: 1fr;
-}
-
-.left-bar picture .back-card .cvc {
-    position: absolute;
-    right: 50px;
-    align-self: center;
-    font-size: 0.8rem;
-    color: var(--white);
-    letter-spacing: 2px;
-}
-
-form {
-    display: grid;
     grid-template-columns: repeat(2, 1fr);
+    justify-content: space-between;
+    padding: 30px;
     gap: 20px;
-    align-content: center;
-    padding: 60px;
-    margin-left: 250px;
 }
 
-form label {
-    display: block;
-    margin-bottom: 2px;
-    font-size: 0.7rem;
-    color: var(--very-dark-violet);
-    font-weight: bold;
+.card-bar picture .card-container:nth-child(1) .card-info .number {
+    align-self: end;
+    color: var(--white);
+    text-align: center;
+    font-size: 1.7rem;
+    white-space: nowrap;
 }
 
-form input {
-    width: 100%;
-    padding: 15px;
-    border: 2px solid var(--light-grayish-violet);
-    border-radius: 4px;
-}
-
-form button {
-    width: 100%;
-    padding: 15px;
-    border: none;
-    border-radius: 4px;
+.card-bar picture .card-container:nth-child(1) .card-info .name,
+.card-bar picture .card-container:nth-child(1) .card-info .exp-date {
+    align-self: end;
     color: var(--light-grayish-violet);
-    background-color: var(--very-dark-violet);
-    cursor: pointer;
+    font-size: 0.7rem;
 }
 
-form .name,
-form .card-number,
-form .button {
+.card-bar picture .card-container:nth-child(1) .card-info .logo,
+.card-bar picture .card-container:nth-child(1) .card-info .number {
     grid-column: 1/-1;
 }
 
-form .exp-date input {
-    width: 45%;
+.card-bar picture .card-container:nth-child(1) .card-info .exp-date {
+    text-align: right;
+}
+
+.card-bar picture .card-container:nth-child(2) {
+    transform: translateX(250px);
 }
