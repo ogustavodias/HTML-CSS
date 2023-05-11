@@ -1,0 +1,137 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    color: inherit;
+}
+
+:root {
+    /* ### Primary */
+    --purple: hsl(259, 100%, 65%);
+    --light-red: hsl(0, 100%, 67%);
+
+    /* ### Neutral */
+    --white: hsl(0, 0%, 100%);
+    --off-white: hsl(0, 0%, 94%);
+    --light-grey: hsl(0, 0%, 86%);
+    --smokey-grey: hsl(0, 1%, 44%);
+    --off-black: hsl(0, 0%, 8%);
+
+    /* ### FONTS */
+    --big-font: 5rem;
+    --normal-font: 2rem;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    min-height: 100vh;
+    display: grid;
+    align-items: center;
+    background-color: var(--off-white);
+}
+
+#main-card {
+    max-width: 700px;
+    margin: 0 auto;
+    background-color: var(--white);
+    padding: 40px;
+    border-radius: 20px 20px 200px 20px;
+}
+
+#main-card .container {
+    display: grid;
+    gap: 40px;
+}
+
+#main-card .container #inputs {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 150px;
+    gap: 30px;
+}
+
+#main-card .container .input-container {
+    color: var(--smokey-grey);
+}
+
+
+#main-card .container label {
+    font-size: 0.8rem;
+}
+
+#main-card .container input {
+    font-size: var(--normal-font);
+    font-weight: 700;
+    width: 100%;
+    padding: 8px;
+    border: 1px solid var(--light-grey);
+    border-radius: 5px;
+}
+
+#main-card .container .detail-line {
+    position: relative;
+    width: 90%;
+    height: 2px;
+    background-color: var(--off-white);
+}
+
+#main-card .container .detail-line::after {
+    position: absolute;
+    right: 0px;
+    top: -40px;
+    content: url(..//assets/images/icon-arrow.svg);
+    background-color: var(--purple);
+    padding: 14px 20px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+#main-card .container ul li {
+    display: flex;
+    align-items: center;
+    font-size: var(--big-font);
+    font-style: italic;
+    font-weight: 800;
+}
+
+#main-card .container ul li span {
+    color: var(--purple);
+    letter-spacing: 1rem;
+}
+
+@media only screen and (max-width:650px) {
+    :root {
+        --normal-font: 1.5rem;
+        --big-font: 4rem;
+    }
+
+    #main-card .container {
+        gap: 80px;
+    }
+
+    #main-card .container #inputs {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 15px;
+    }
+
+    #main-card .container .detail-line {
+        width: 100%;
+    }
+
+    #main-card .container .detail-line::after {
+        right: 50%;
+        transform: translateX(50%);
+    }
+
+}
+
+@media only screen and (max-width:450px) {
+    :root {
+        --normal-font: 1.5rem;
+        --big-font: 2.5rem;
+    }
+}
