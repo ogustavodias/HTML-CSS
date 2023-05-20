@@ -19,15 +19,12 @@
     <title>Age Calculator</title>
   </head>
   <body>
-
-    
-
     <main id="main-card">
       <div class="container">
-        <div id="inputs">
+        <form id="inputs">
           <div class="input-container">
             <label for="day">DAY</label>
-            <input type="text" placeholder="DD" id="day" />
+            <input type="text" placeholder="DD" id="day" required />
           </div>
           <div class="input-container">
             <label for="month">MONTH</label>
@@ -37,24 +34,27 @@
             <label for="year">YEAR</label>
             <input type="text" placeholder="YYYY" id="year" />
           </div>
-        </div>
-        <div class="detail-line"></div>
+          <div class="detail-line">
+            <a class="button"><img src="../assets/images/icon-arrow.svg"></a>
+          </div>
+        </form>
         <ul id="outputs">
           <li>
-            <span>--</span>
+            <span data-js="year">--</span>
             <p>years</p>
           </li>
           <li>
-            <span>--</span>
+            <span data-js="month">--</span>
             <p>months</p>
           </li>
           <li>
-            <span>--</span>
+            <span data-js="day">--</span>
             <p>days</p>
           </li>
         </ul>
       </div>
     </main>
 
+    <script src="../js/index.js"></script>
   </body>
 </html>

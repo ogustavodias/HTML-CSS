@@ -50,7 +50,7 @@ body {
 #main-card .container #inputs {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 150px;
-    gap: 30px;
+    gap: 40px 30px;
 }
 
 #main-card .container .input-container {
@@ -71,21 +71,27 @@ body {
     border-radius: 5px;
 }
 
+#main-card .container input:focus {
+    outline: 1px solid var(--purple);
+}
+
 #main-card .container .detail-line {
     position: relative;
+    grid-row: 2;
+    grid-column: 1/-1;
     width: 90%;
     height: 2px;
     background-color: var(--off-white);
 }
 
-#main-card .container .detail-line::after {
+#main-card .container .detail-line .button {
     position: absolute;
-    right: 0px;
-    top: -40px;
-    content: url(..//assets/images/icon-arrow.svg);
-    background-color: var(--purple);
-    padding: 14px 20px;
+    display: block;
+    right: 0;
+    top: -32px;
+    padding: 10px;
     border-radius: 50%;
+    background-color: var(--purple);
     cursor: pointer;
 }
 
@@ -115,14 +121,14 @@ body {
     #main-card .container #inputs {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
-        gap: 15px;
+        gap: 80px 15px;
     }
 
     #main-card .container .detail-line {
         width: 100%;
     }
 
-    #main-card .container .detail-line::after {
+    #main-card .container .detail-line .button {
         right: 50%;
         transform: translateX(50%);
     }
